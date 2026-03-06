@@ -478,16 +478,19 @@
     <div class="form-box">
       <h3>Зареєструватися</h3>
       <p>Займе менше хвилини</p>
-      <div class="form-group"><label>Email адреса</label><input type="email" placeholder="your@email.com"/></div>
-      <div class="form-group">
-        <label>Що шукаєш?</label>
-        <select><option value="">Оберіть варіант</option><option>Роботу</option><option>Житло</option><option>Допомогу з документами</option><option>Все одразу</option></select>
-      </div>
-      <div class="form-group">
-        <label>Місто в Польщі</label>
-        <select><option value="">Оберіть місто</option><option>Варшава</option><option>Краків</option><option>Вроцлав</option><option>Гданськ</option><option>Познань</option><option>Інше</option></select>
-      </div>
-      <a href="#" class="btn-yellow" style="width:100%;text-align:center;display:block;padding:16px;margin-top:8px;border-radius:14px;">Хочу першим отримати доступ →</a>
+      <form action="https://formspree.io/f/xqeykawp" method="POST">
+        <div class="form-group"><label>Email адреса</label><input type="email" name="email" placeholder="your@email.com" required/></div>
+        <div class="form-group">
+          <label>Що шукаєш?</label>
+          <select name="shukayu"><option value="">Оберіть варіант</option><option>Роботу</option><option>Житло</option><option>Допомогу з документами</option><option>Все одразу</option></select>
+        </div>
+        <div class="form-group">
+          <label>Місто в Польщі</label>
+          <select name="misto"><option value="">Оберіть місто</option><option>Варшава</option><option>Краків</option><option>Вроцлав</option><option>Гданськ</option><option>Познань</option><option>Інше</option></select>
+        </div>
+        <input type="hidden" name="_subject" value="Новий користувач UkrConnect!"/>
+        <button type="submit" class="btn-yellow" style="width:100%;text-align:center;display:block;padding:16px;margin-top:8px;border-radius:14px;border:none;cursor:pointer;font-family:Unbounded,sans-serif;font-size:13px;font-weight:700;">Хочу першим отримати доступ →</button>
+      </form>
     </div>
   </div>
 </section>
